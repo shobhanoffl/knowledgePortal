@@ -1,0 +1,154 @@
+/* .menu-bar{
+    list-style-type: none;
+} */
+#app .v-tabs{
+	flex:0.3;
+}
+#app .v-application--wrap{
+    min-height: auto;
+}
+.editprofile-wrap {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.profile-image{
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 6%;
+    margin-top: 0.8%;
+}
+.profile-image img{
+    border-radius: 50%;
+    width: 160px;
+    /* height: 152px; */
+}
+
+.profile-user-name {
+    font-size: 1.8rem;
+    margin-left: 35%;
+}
+
+.profile-dept-btn {
+    left: 35%;
+    top: 3%;
+    position: relative;
+    font-size: 1rem;
+}
+
+.profile-bio {
+    font-size: 1.1rem;
+    margin-top: 6rem;
+    margin-left: -8.5rem;
+    flex: 1;
+    /* margin-left: 5rem; */
+}
+
+/* #app ul.menu-bar {
+    padding-left: 0;
+} */
+
+
+.profile-stat-count {
+    display: block;
+}
+
+/*Not to be Changed*/
+.profile-user-name{
+    font-size: 1.6rem;
+    margin-left: auto;
+    text-align: center;
+} 
+.profile-dept-btn{
+    left: 0;
+}
+.profile-stat-count{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.profile{
+    flex-direction: column;
+}
+.profile-bio{
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+.profile-image img{
+    margin-left: auto;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 10%);
+}
+.profile-bio,.profile-user-settings,.profile-image{
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-image{
+    margin-top:40px;
+}
+.profile-user-settings{
+    margin-top:30px;
+}
+
+.update-link{
+    color: #3a7bd5;
+    text-align: center;
+    padding: 2px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.update-btn{
+    background: #3d83e4;
+    padding: 10px 14px;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 2px solid #3d83e4;
+}
+.update-btn:hover{
+    background-color: white;
+    color: #3d83e4;
+    border: 2px solid #3d83e4;
+}
+.editprofile-btns{
+    text-align: center;
+    margin-top: 50px;
+}
+.editprofile-btns span{
+    margin: 15px;
+}
+.little-indicator{
+    font-size: 13px;
+    color: #3a3a3a;
+}
+.update-link-text{
+    color: #3a7bd5;
+    text-align: center;
+    padding: 2px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 700px) {
+    .editprofile-wrap{
+      width: 600px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .editprofile-wrap{
+      width: 100%;
+      padding: 0 25px;
+    }
+}

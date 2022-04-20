@@ -1,0 +1,44 @@
+.profile-wrap {
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius:20px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 700px;
+}
+.first-line{
+    display: flex;
+    align-items:flex-start;
+}
+.avator {
+    border-radius:50%;
+    width:60px;
+    height:60px;
+    margin-left: 3px;
+    object-fit: contain;
+}
+.profileName{
+    font-weight: bold;
+    margin-top:3px;
+    margin-left:20px;
+    display:inline-block;
+    font-size:16px;
+}
+.mintext {
+    font-weight:normal;
+    margin-top:30px;
+    margin-left: -65px;
+    display: block;
+}
+
+@media only screen and (max-width: 700px) {
+  .profile-wrap{
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .profile-wrap{
+    width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+/* panel layout mechanics */
+.panel-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  transform: translateX(100%);
+  transition: .3s ease-out;
+  z-index: 999;
+}
+.panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  color: #eee;
+  overflow: auto;
+  padding: 1em;
+}
+
+/* simulate panel state control --
+this can also be triggered by a 
+class name added to the body tag. 
+Just using a checkbox sibling here
+for simplicity
+*/ 
+[type="checkbox"]:checked ~ .panel-wrap {
+  transform: translateX(0%);
+}
+
+
+/* demo display */
+*,*:before, *:after {box-sizing: border-box;}

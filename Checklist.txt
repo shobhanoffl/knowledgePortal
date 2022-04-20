@@ -1,0 +1,36 @@
+Tasks                           |Done   |No |
+---------------------------------------------
+Color correction-Blue Theme     |       |*  |
+land
+-icons                          |       |*  | 
+login/signup
+-resize                         |       |*  |
+general
+-remove location from posts     |*      |   |
+-viewing full post page         |       |*  |
+-put limited details on profile |       |*  |
+& a link to view full details   |       |   |
+only for admins                 |       |   |
+-viewing full details of staff  |       |*  |
+by admins                       |       |   |
+-assets/landing/css/style.css   |       |*  |
+a.back-to-top                   |       |   |
+check with the location         |       |   |
+
+Session Time extension          |       |*  |
+Shorten Display Name of Vids    |       |*  |
+Link to Profile in Admin Panel  |       |*  |
+
+Same Name of Files and Related  |       |*  | 
+Issues                          |       |   |
+
+Control the No.of Posts Loading |       |*  |
+Per Load/Refresh
+
+Delete the files if the Related |       |*  |
+info is deleted from db
+
+Keep all Date Inputs as UNIX    |       |*  |
+and Convert wherever necessary  
+
+Video and Document Names are too long to be displayed

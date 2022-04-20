@@ -1,0 +1,57 @@
+@font-face{font-family:agency fb bold;font-style:normal;font-weight:700;src:local('Agency FB Bold'),local('AgencyFB-Bold'),url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.woff) format('woff'),url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.ttf) format('truetype')}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+.page-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  border-radius: 50px;
+  color: #3C97F7;
+  border: 3px solid #3C97F7;
+  width: fit-content;
+  padding: 8px 20px;
+  box-shadow: 1px 1px 8px 3px rgb(85, 175, 253,0.5);
+  background-color: white;
+}
+.nav-title{
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    width: 700px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    background: linear-gradient(to right,#52b1ff,#358ff5);
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    z-index: 1;
+    font-family: 'Agency FB Bold', arial;
+  }
+  #app .static-class{
+    display: flex;
+    align-items: flex-start;
+  }
+  .link-to-profile{
+    text-decoration: none;
+  }
+  .link-to-profile:hover{
+    text-decoration: underline;
+  }
+  .delete-post-link{
+    font-size: 13px;
+    margin-right: -2px;
+    float: right;
+  }
+  @media only screen and (max-width: 700px) {
+      .nav-title{
+        width: 600px;
+        margin-bottom: 14px;
+      }
+  }
+  @media only screen and (max-width: 600px) {
+      .nav-title{
+        width: 97%;
+      }
+  }

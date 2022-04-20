@@ -1,0 +1,122 @@
+<?php
+include('handling/auth.php');
+include('handling/redirect.php');
+include('handling/write.php');
+include('handling/read.php');
+if(!isset($_SESSION['reg_clgid']) || empty($_SESSION['reg_clgid'])){
+  header('location: index.php?msg=Logged+Out+Successfully');
+  exit();
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="assets/app/css/nav-title.css" rel="stylesheet">
+    <link href="assets/app/css/app-nav-bar.css" rel="stylesheet">
+    <link href="assets/app/css/settings-options.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+<style>
+</style>
+</head>
+<body>
+  <div id="app">
+    <v-app>
+<!-- TITLE & NAVIGATION -->
+<div class="menu-component">
+<nav class="navbar">
+        <ul class="menu-bar" style="flex-direction: column;">
+          <li @click="toShow = !toShow"><v-icon color="black">mdi-menu</v-icon></li>
+          <a href="home.php?getPosts=journal" class="nav-link">
+          <li @click="toShow = false" :style="{display:[toShow ? 'Block' : 'None']}">
+              <v-icon color="black">mdi-home</v-icon>
+          </li>
+          </a><a href="profile.php?profile=<?php echo $p_clgid[0]; ?>&getPosts=journal" class="nav-link">
+          <li @click="toShow = false" :style="{display:[toShow ? 'Block' : 'None']}">
+              <v-icon color="black">mdi-account</v-icon>
+          </li>
+          </a><a href="settings.php" class="nav-link">
+          <li @click="toShow = false" :style="{display:[toShow ? 'Block' : 'None']}">
+              <v-icon color="black">mdi-cog</v-icon>
+          </li>
+          </a>
+          <?php if($p_suser[0]==1){ ?>
+          <a href="adminpanel.php" class="nav-link">
+          <li @click="toShow = false" :style="{display:[toShow ? 'Block' : 'None']}">
+              <v-icon color="black">mdi-account-cog</v-icon>
+          </li>
+          </a>
+          <?php } ?>
+          <a href="index.php?logout=success" class="nav-link">
+          <li @click="toShow = false" :style="{display:[toShow ? 'Block' : 'None']}">
+              <v-icon color="red">mdi-logout</v-icon>
+          </li>
+          </a>
+        </ul>
+      </nav>
+      </div>
+    <span class="nav-title">
+    Knowledge Portal
+    </span>
+<!-- TITLE & NAVIGATION -->
+<!-- Vuetify Snackbar for Displaying Messages -->
+<?php if (isset($_GET['msg'])){ ?>
+<div class="text-center">
+    <v-snackbar v-model="snackbar" :timeout="timeout" color="primary" shaped> 
+      <?php echo $_GET['msg']; ?>
+      <template v-slot:action="{ attrs }">
+        <v-btn color="white" text v-bind="attrs" @click="snackbar = false">
+          Close
+        </v-btn>
+      </template>
+    </v-snackbar>
+</div>
+<?php } ?>
+<!-- Vuetify Snackbar for Displaying Messages -->
+<br><center>  
+  <div class="page-title">
+    Settings
+  </div>
+</center>
+<!-- SETTINGS OPTIONS -->
+<div class="element-wrap">
+  <a v-for="option in optionnames" :key="option.icon" style="text-decoration:none;color:black;" :href="option.link">
+      <div class="elements">
+          <v-icon color="black">{{option.icon}}</v-icon> 
+          &nbsp;&nbsp;{{option.opname}}
+        </div>
+  </a>
+</div>
+<!-- SETTINGS OPTIONS -->
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data:{
+            // Nav Bar Show
+            toShow : false,
+            // Snackbar
+            <?php if (isset($_GET['msg'])){ ?>
+              snackbar: true,
+              timeout: 4000,
+            <?php } ?>
+            // Settings Options
+            optionnames: [
+                {icon:'mdi-account-edit',opname:'Edit Profile',link:'editprofile.php'},
+                {icon:'mdi-lock',opname:'Change Password',link:'changepass.php'},
+                {icon:'mdi-wallpaper',opname:'Display',link:'display.php'}]
+      },
+      methods: {
+        //
+      }
+    })
+  </script>
+</body>
+</html>

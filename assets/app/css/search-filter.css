@@ -1,0 +1,73 @@
+.newpost-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    margin: 2px auto 20px 3px;
+  }
+  .newpost-wrap{
+    width: 700px;
+    margin-top: 10px;
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    border-radius: 25px;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+  }
+  .newpost-wrap:hover,.newpost-wrap:focus,.newpost-wrap:focus{
+    border: 1.5px solid white;
+    box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.1);
+  }
+  .newpost-icons{
+    padding: 20px 0;
+  }
+  .update-link{
+      color: #3a7bd5;
+      text-align: center;
+      padding: 2px;
+      font-weight: 500;
+  }
+  .update-btn{
+      background: #3d83e4;
+      padding: 12px 25px;
+      color: white;
+      font-weight: 500;
+      border-radius: 35px;
+      border: 2px solid #3d83e4;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; 
+      width:max-content;
+  
+  }
+  .update-btn:hover{
+      background-color: white;
+      color: #3d83e4;
+      border: 2px solid #3d83e4;
+  }
+  .expand-icon{
+    float: right;
+  }
+  .table-wrap{
+    width: 100%;
+    margin-top: 10px;
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    border-radius: 25px;
+  }
+  .table-wrap-style{
+    background-color: white;
+    width: fit-content;
+  }
+  @media only screen and (max-width: 700px) {
+    .newpost-wrap,.table-wrap{
+      width: 600px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .newpost-wrap,.table-wrap{
+      width: 100%;
+    }
+  }

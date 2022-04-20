@@ -1,0 +1,43 @@
+#app a{
+    width: 100%;
+}
+#app .v-app{
+    min-height: 0px;
+}
+.nav-link{
+    text-decoration: none;
+}
+ul.bottomnavbar{
+    list-style-type: none;
+}
+.profile-stats {
+    display:inline-block;
+    z-index: 50;
+    flex-basis: 100%;
+    float: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    background: white;
+}
+.profile-stats ul {
+    display: flex;
+    text-align: center;
+    flex-basis: 100%;
+    border: 0.1rem solid #dadada;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+#app .profile-stats ul {
+    padding-left: 0;
+}
+.profile-stats li {
+    flex: 1;
+    margin: 0;
+}
+.profile-stat-count {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 8px;
+}

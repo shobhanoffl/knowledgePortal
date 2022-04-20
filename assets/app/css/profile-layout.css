@@ -1,0 +1,100 @@
+ul{
+    list-style-type: none;
+}
+.container {
+    margin: 35px auto 0 auto;
+    width: 700px;
+}
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+}
+.profile-image{
+    text-align: center;
+}
+.profile-image img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    box-shadow: 1px 1px 10px 1px rgb(0,0,0,0.1);
+}
+.profile-user-name {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    margin: 3px auto;
+}
+.profile-dept-btn{
+    text-align: center;
+    color: rgb(122, 122, 122);
+}
+.profile-bio {
+    margin: 8px auto 8px auto;
+    text-align: left;
+    flex: 1;
+}
+
+.profile-stats {
+    flex-basis: 100%;
+    float: none;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-stats ul {
+    display: flex;
+    text-align: center;
+    flex-basis: 100%;
+    border-top: 0.1rem solid #dadada;
+    border-bottom: 0.1rem solid #dadada;
+    padding-bottom: 6px;
+}
+#app .profile-stats ul {
+    padding-left: 0;
+}
+.profile-stats li {
+    flex: 1;
+    margin: 0;
+    width: 150px;
+}
+.profile-stat-count {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.profile-stat-caption{
+    font-size: 16px;
+}
+.vueSheet{
+    max-width:700px;
+}
+@media only screen and (max-width: 450px) {
+    .profile-bio{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .vueSheet{
+        width:345px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .container{
+      width: 600px;
+    }
+    .vueSheet{
+        max-width:600px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container{
+      width: 100%;
+    }
+    .vueSheet{
+        max-width:500px;
+    }
+}

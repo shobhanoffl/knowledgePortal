@@ -1,5 +1,11 @@
+![Knowledge Portal Logo](https://user-images.githubusercontent.com/78255808/230686261-46d48cec-2810-477e-a416-99f28c40769a.jpg)
+
 # Knowledge Portal
-Knowledge Portal is a College Faculty's Achievements, Certifications and Other logs/events (Workshops,Seminars) Broadcasting and Management Website, similar to LinkedIn.
+Knowledge Portal is a College Faculty's Achievements, Certifications and Other logs/events (Workshops,Seminars) Broadcasting and Management Website, similar to LinkedIn, developed for my college Sona College of Technology, Salem.
+
+![SharedScreenshot](https://user-images.githubusercontent.com/78255808/230686307-82975c1d-372d-46a9-b655-713bd3257ce8.jpg)
+![SharedScreenshot2](https://user-images.githubusercontent.com/78255808/230686318-6a9b8789-2399-46ce-bc0a-bd0501c69193.jpg)
+![SharedScreenasdshot](https://user-images.githubusercontent.com/78255808/230686328-35a3b435-b7dd-4a46-9988-cd25263d59d8.jpg)
 
 ## Features
 * Post New Updates

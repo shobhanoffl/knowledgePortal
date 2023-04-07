@@ -1,9 +1,6 @@
 # Knowledge Portal
 Knowledge Portal is a College Faculty's Achievements, Certifications and Other logs/events (Workshops,Seminars) Broadcasting and Management Website, similar to LinkedIn.
 
-## Progress
-Final stage of Project Work is going on, where new features needed to be added. After that, installation and usage instructions will be published here.
-
 ## Features
 * Post New Updates
 * Read Other's Updates in their Timeline
@@ -23,3 +20,6 @@ Final stage of Project Work is going on, where new features needed to be added. 
 * Javascript, JQuery
 * PHP
 * MySQL
+
+## Progress
+Final stage of Project Work is going on, where new features needed to be added. After that, installation and usage instructions will be published here.
